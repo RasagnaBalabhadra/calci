@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id">DOM</p>
+    <div class="class">div</div>
+    <!-- <p>select</p> -->
+    <h1>heading</h1>
+    <p><span>innerhtml</span><br>innercontent</br></p>
+    <script>
+        id = document.getElementById('id')
+        select = document.querySelector('p')
+        s = document.querySelectorAll('p')
+        s[0].style.color = 'pink'
+        cl = document.getElementsByClassName('class')
+        t = document.getElementsByTagName('h1')
+        t[0].style.cssText ='color:blue;font-size:20px;background-color:orange'
+        p = document.getElementsByTagName("p")
+        document.write(p[2].innerContent)
+    </script>
+</body>
+</html>

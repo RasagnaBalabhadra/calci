@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+.title{
+    color: black;
+    font-size: 30px;
+}
+.first_div{
+    color: black;
+    font-size: 15px;
+    background-color: red;
+}
+div{
+    color: rosybrown;
+    font-size: 20px;
+    background-color: pink;
+}

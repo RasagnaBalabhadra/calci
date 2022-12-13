@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="1214" id="cbox" value="1214">1214
+    <input type="checkbox" name="1227" id="cbox" value="1227">1227
+    <input type="button" value="save" onclick="save()">
+    <p id="pres"></p>
+    <p id="abs"></p>
+
+
+    <script>
+         function save(){
+            const pres =[];
+            const abs =[];
+       let ch = document.querySelectorAll("#cbox")
+            
+       for(let label of ch){
+        if(label.checked){
+            pres.push(label.value)
+        }
+        else{
+            abs.push(label.value)
+        }
+       }
+       p = document.getElementById('pres')
+            a = document.getElementById('abs')
+       if(pres==""){
+        pres[0]=0
+       }
+       if(abs==""){
+        abs[0]=0
+       }
+       p.innerHTML = "presentiees:"+pres
+       a.innerHTML = "absentiees:"+abs
+        }
+    </script>
+</body>
+</html>
